@@ -13,11 +13,6 @@ main {
     max-width: 840px;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-}
-
 h1 {
     color: darkblue;
 }
@@ -26,7 +21,7 @@ p {
     padding: 0;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
