@@ -17,8 +17,10 @@ h1 {
 
 .herodiv {
     margin: 10px auto;
-
-    /* If removed, what happens? */
+    /* 
+    If removed, what happens? 
+    The information box moves away from the image instead of staying in the bottom-left corner of the image.
+    */
 }
 
 .herodiv img {
