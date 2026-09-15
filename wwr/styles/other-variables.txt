@@ -1,0 +1,15 @@
+/* --secondary-color: #0077ED; */
+    --accent2-color: #161617;
+    --accent3-color: #1F1F21;
+        /* --muted-text-color: #A1A1A6; */
+        /* --light-border-color: rgb(255 255 255 / 0.12); */
+        /* --max-width: 1200px; */
+        /* Spacing
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+    */
+
+    /* Effects */
+    /* --shadow-soft: 0 10px 30px rgb(0 0 0 / 0.25); */
