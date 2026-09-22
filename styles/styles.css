@@ -32,6 +32,7 @@ aside {
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
+    text-align: center;
 }
 
 nav {
@@ -51,10 +52,6 @@ nav a {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
 }
 
-main {
-    max-width: 840px;
-}
-
 h1 {
     color: var(--main-color);
     border-bottom: 1px solid #000;
@@ -71,12 +68,6 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
-}
-
-aside {
-    width: 20rem;
-    text-align: center;
-    position: relative;
 }
 
 aside h2 {
