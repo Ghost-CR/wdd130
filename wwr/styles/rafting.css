@@ -146,6 +146,28 @@ section {
     padding: 8px;
 }
 
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 160px 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history h2 {
+    text-align: center;
+}
+
+.history-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
