@@ -1,6 +1,6 @@
 :root {
     /* Colors */
-    --primary-color: #2997FF;
+    --primary-color: #0066CC;
 
     --accent1-color: #0B0B0C;
 
@@ -133,7 +133,7 @@ h2 {
 }
 
 h2 {
-    color: var(--primary-color);
+    color: var(--heading-color);
 }
 
 p,
