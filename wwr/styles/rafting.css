@@ -210,3 +210,243 @@ footer {
     height: auto;
     display: block;
 }
+/* Contact page */
+main.contact-main {
+    padding: 2.5rem 1.25rem 3rem;
+}
+
+.contact-main > h1 {
+    margin: 0 0 1.5rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contact-main p {
+    margin: 0.45rem 0;
+    padding: 0;
+}
+
+.contact-company {
+    margin: 0 auto 1.5rem;
+    padding: 0 1rem 1rem;
+    text-align: center;
+}
+
+.contact-company h2 {
+    margin-bottom: 0.5rem;
+}
+
+.contact-company address {
+    margin: 0.5rem 0;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.contact-company a {
+    color: var(--primary-color);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+.contact-layout > section {
+    margin: 0;
+    padding: 1.5rem;
+    border: 1px solid #d5d5d8;
+    border-radius: var(--border-radius);
+    background-color: var(--light-color);
+    box-shadow: 0 8px 24px var(--shadow-color);
+}
+
+.contact-layout h2,
+.employee-section h2 {
+    margin: 0 0 1rem;
+}
+
+.contact-map iframe {
+    display: block;
+    width: 100%;
+    min-height: 360px;
+    border: 0;
+    border-radius: 12px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-field {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid #b8bbc1;
+    border-radius: 10px;
+    color: var(--accent1-color);
+    font: inherit;
+}
+
+.contact-form textarea {
+    min-height: 9rem;
+    resize: vertical;
+}
+
+.contact-form fieldset {
+    display: grid;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid #d5d5d8;
+    border-radius: 10px;
+}
+
+.contact-form legend {
+    padding: 0 0.4rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.contact-choice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0.2rem 0;
+}
+
+.contact-choice input {
+    flex: 0 0 auto;
+    margin-top: 0.25rem;
+    accent-color: var(--primary-color);
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.contact-form button {
+    justify-self: start;
+    padding: 0.8rem 1.25rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #004f9e;
+}
+
+.employee-section {
+    margin: 1.5rem 0 0;
+    padding: 1.5rem;
+    border: 1px solid #d5d5d8;
+    border-radius: var(--border-radius);
+    background-color: #f5f5f7;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.employee-card {
+    overflow: hidden;
+    margin: 0;
+    border-radius: 12px;
+    background-color: var(--light-color);
+    box-shadow: 0 6px 18px var(--shadow-color);
+}
+
+.employee-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.employee-card figcaption {
+    padding: 0.85rem;
+    color: var(--accent1-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (max-width: 860px) {
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 0.55rem 0.7rem;
+    }
+
+    .contact-main {
+        padding: 2rem 1rem;
+    }
+
+    .contact-layout > section,
+    .employee-section {
+        padding: 1rem;
+    }
+
+    .employee-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}

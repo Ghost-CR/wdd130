@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Mueras Rafting</title>
+
+    <meta name="description"
+        content="Contact Mueras Rafting with reservation questions, trip inquiries, or feedback. Find our location and send our team a message.">
+    <meta name="author" content="Gary Mueras">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            <img src="images/rafting-logo.png" alt="Mueras Rafting logo">
+
+            <nav>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main class="contact-main">
+        <h1>Contact Us</h1>
+
+        <section class="contact-company" aria-labelledby="company-name">
+            <h2 id="company-name">Mueras Rafting</h2>
+            <address>
+                123 Main River Street<br>
+                Kolob, California
+            </address>
+            <p><strong>Phone:</strong> <a href="tel:+19999999999">+1 999 999 9999</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+        </section>
+
+        <div class="contact-layout">
+            <section class="contact-map" aria-labelledby="location-heading">
+                <h2 id="location-heading">Find Us</h2>
+                <iframe
+                    src="https://maps.google.com/maps?q=123+Main+River+Street%2C+Kolob%2C+California&amp;output=embed"
+                    title="Map to Mueras Rafting in Kolob, California"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <section class="contact-message" aria-labelledby="message-heading">
+                <h2 id="message-heading">Send Us a Message</h2>
+                <form class="contact-form" method="post">
+                    <div class="contact-field">
+                        <label for="full-name">Your name</label>
+                        <input type="text" id="full-name" name="name" autocomplete="name" required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="email">Your email address</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Purpose of your message</legend>
+                        <label class="contact-choice" for="general-inquiry">
+                            <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
+                            <span>General Inquiry</span>
+                        </label>
+                        <label class="contact-choice" for="reservation-question">
+                            <input type="radio" id="reservation-question" name="purpose" value="reservation-question">
+                            <span>Reservation Question</span>
+                        </label>
+                        <label class="contact-choice" for="website-suggestion">
+                            <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion">
+                            <span>Website Suggestion</span>
+                        </label>
+                    </fieldset>
+
+                    <div class="contact-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <label class="contact-choice" for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <span>Please subscribe me to the monthly newsletter</span>
+                    </label>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="employee-section" aria-labelledby="employee-heading">
+            <h2 id="employee-heading">We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure class="employee-card">
+                    <img src="images/employee-lead-guide.jpg" alt="Portrait of a Mueras Rafting lead river guide" loading="lazy">
+                    <figcaption>Lead River Guide</figcaption>
+                </figure>
+                <figure class="employee-card">
+                    <img src="images/employee-safety-coordinator.jpg" alt="Portrait of a Mueras Rafting safety coordinator" loading="lazy">
+                    <figcaption>Safety Coordinator</figcaption>
+                </figure>
+                <figure class="employee-card">
+                    <img src="images/employee-trip-coordinator.jpg" alt="Portrait of a Mueras Rafting trip coordinator" loading="lazy">
+                    <figcaption>Trip Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2026 Mueras Rafting | Gary Mueras</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-logo.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://www.linkedin.com/">
+                <img src="images/linkedin-logo.svg" alt="LinkedIn Logo">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram-logo.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
